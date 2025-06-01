@@ -241,3 +241,17 @@ register_element_cls("w:spacing", CT_Spacing)
 register_element_cls("w:tab", CT_TabStop)
 register_element_cls("w:tabs", CT_TabStops)
 register_element_cls("w:widowControl", CT_OnOff)
+
+from .comments import (  # noqa
+    CT_Comment,
+    CT_Comments,
+    CT_CommentRangeEnd,
+    CT_CommentRangeStart,
+    CT_CommentReference,
+)
+
+register_element_cls("w:comment", CT_Comment)
+register_element_cls("w:comments", CT_Comments)
+register_element_cls("w:commentRangeEnd", CT_CommentRangeEnd)
+register_element_cls("w:commentRangeStart", CT_CommentRangeStart)
+register_element_cls("w:commentReference", CT_CommentReference)
